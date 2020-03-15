@@ -21,7 +21,7 @@ async function getGitHubProfile(searchText){
  <div class="container">
  
  <div class="card" style="width:20rem">
-   <img class="card-img-top" src="${Data.avatar_url}" alt="Card image" style="width:90%;margin:0 auto">
+   <img class="rounded" src="${Data.avatar_url}" alt="Card image" style="width:90%;margin:0 auto">
    <div class="card-body">
      <h4 class="card-title">${Data.login}</h4>
      <p class="card-text">
