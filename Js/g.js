@@ -1,5 +1,4 @@
 
-
 let time = document.getElementById('copy');
 
 function clock() {
@@ -15,7 +14,6 @@ function clock() {
 }
 
 clock();
-
 
 
 
@@ -41,7 +39,7 @@ async function getGitHubProfile(searchText){
  // document.getElementById("template").innerHTML=`<img src="${Data.avatar_url}">`
  document.getElementById("template").innerHTML=`
  <div class="container">
- 
+
  <div class="card" style="width:20rem">
    <img class="rounded" src="${Data.avatar_url}" alt="Card image" style="width:90%;margin:0 auto">
    <div class="card-body">
@@ -59,13 +57,13 @@ async function getGitHubProfile(searchText){
 <div class="modal" id="myModal">
 <div class="modal-dialog">
   <div class="modal-content">
-  
+
     <!-- Modal Header -->
     <div class="modal-header">
       <h4 class="modal-title">Profile Detail of ${Data.login}</h4>
       <button type="button" class="close" data-dismiss="modal">&times;</button>
     </div>
-    
+
     <!-- Modal body -->
     <div class="modal-body">
     <div class="card" style="width:100%;">
@@ -81,18 +79,18 @@ async function getGitHubProfile(searchText){
       <li>Public Repositetory: ${Data.public_repos}</li>
       <li>Last Update:${Data.updated_at}</li>
       <li>Following:${Data.following}</li>
-     
-     
-      
+
+
+
     </div>
     </div>
-    
+
     <!-- Modal footer -->
     <div class="modal-footer">
-    	<h5 id="copy"></h5>
+
       <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
     </div>
-    
+
   </div>
 </div>
 </div>
